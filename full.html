@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://cdn.tinymce.com/4/tinymce.min.js'></script>
+  <script>
+  tinymce.init({
+    selector: 'textarea#mytextarea',
+    plugins: [
+      'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+      'searchreplace wordcount visualblocks visualchars code fullscreen',
+      'insertdatetime media nonbreaking save table contextmenu directionality',
+      'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc'
+    ],
+    browser_spellcheck: true,
+    toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+    toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+    image_advtab: true,
+  });
+  </script>
+</head>
+
+<body>
+<h1>WYSIWYG Editor</h1>
+  <form method="post">
+    <textarea id="mytextarea">Hello, World!</textarea>
+    <input type="submit" value="Save">
+  </form>
+</body>
+</html>
